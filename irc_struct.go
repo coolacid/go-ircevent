@@ -62,7 +62,7 @@ type Event struct {
 	User       string //<usr>
 	Arguments  []string
 	Tags       map[string]string
-	Connection *Connection
+	Connection *Connection `json:"-"`
 }
 
 // Retrieve the last message from Event arguments.
